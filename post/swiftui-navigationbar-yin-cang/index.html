@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SwiftUI NavigationBar 隐藏 | Gridea</title>
+<meta name="description" content="温故而知新" />
+<link rel="shortcut icon" href="http://v1ki.top//favicon.ico?v=1573915635114">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="http://v1ki.top//styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="http://v1ki.top/">
+  <img class="avatar" src="http://v1ki.top//images/avatar.png?v=1573915635114" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              SwiftUI NavigationBar 隐藏
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-11-14
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="http://v1ki.top//tag/l4gXTHyAJ" class="post-tag">
+                  # SwiftUI
+                </a>
+              
+                <a href="http://v1ki.top//tag/lw98i_yCV4" class="post-tag">
+                  # NavigationBar
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>虽然在View 中有 <code>navigationBarHidden</code> 的方法，<br>
+<img src="http://v1ki.top//post-images/1573717474447.png" alt=""><br>
+但是,实际使用时却需要注意，如果没有设置 <code>title</code> 的情况下，<br>
+<img src="http://v1ki.top//post-images/1573717482360.jpg" alt=""><br>
+就设置 Hidden方法， 是不会生效的。</p>
+<figure data-type="image" tabindex="1"><img src="http://v1ki.top//post-images/1573717724985.png" alt=""></figure>
+<p>但是。如果设置了<code>title</code> 之后，就可以隐藏了。<br>
+<img src="http://v1ki.top//post-images/1573717769286.png" alt=""></p>
+<p>另外，需要注意的是API中提到 了。 <code>This modifier only takes effect when this view is inside of and visible within a NavigationView.</code> , 也就是说只能在 <code>NavigationView</code> 中的可见 <code>View</code> 才会生效。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="http://v1ki.top//atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
+
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
