@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://v1ki.top/</id>
-    <title>Gridea</title>
-    <updated>2019-11-16T14:47:20.086Z</updated>
+    <title>浮生闲记</title>
+    <updated>2019-11-16T14:48:06.339Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://v1ki.top/"/>
     <link rel="self" href="http://v1ki.top//atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>要么有趣,要么老去.</subtitle>
     <logo>http://v1ki.top//images/avatar.png</logo>
     <icon>http://v1ki.top//favicon.ico</icon>
-    <rights>All rights reserved 2019, Gridea</rights>
+    <rights>All rights reserved 2019, 浮生闲记</rights>
     <entry>
         <title type="html"><![CDATA[SwiftUI NavigationBar 隐藏]]></title>
         <id>http://v1ki.top//post/swiftui-navigationbar-yin-cang</id>
