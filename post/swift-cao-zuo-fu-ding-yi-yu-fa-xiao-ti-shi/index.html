@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>SwiftUI NavigationBar 隐藏 | 浮生闲记</title>
+<title>Swift 操作符使用扩展 | 浮生闲记</title>
 <meta name="description" content="要么有趣,要么老去." />
 <link rel="shortcut icon" href="http://v1ki.top//favicon.ico?v=1574875055772">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -73,37 +73,78 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              SwiftUI NavigationBar 隐藏
+              Swift 操作符使用扩展
             </h2>
             <div class="post-info">
               <span>
-                2019-11-14
+                2019-11-27
               </span>
               <span>
-                1 min read
+                2 min read
               </span>
-              
-                <a href="http://v1ki.top//tag/l4gXTHyAJ" class="post-tag">
-                  # SwiftUI
-                </a>
-              
-                <a href="http://v1ki.top//tag/lw98i_yCV4" class="post-tag">
-                  # NavigationBar
-                </a>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>虽然在View 中有 <code>navigationBarHidden</code> 的方法，<br>
-<img src="http://v1ki.top//post-images/1573717474447.png" alt=""><br>
-但是,实际使用时却需要注意，如果没有设置 <code>title</code> 的情况下，<br>
-<img src="http://v1ki.top//post-images/1573717482360.jpg" alt=""><br>
-就设置 Hidden方法， 是不会生效的。</p>
-<figure data-type="image" tabindex="1"><img src="http://v1ki.top//post-images/1573717724985.png" alt=""></figure>
-<p>但是。如果设置了<code>title</code> 之后，就可以隐藏了。<br>
-<img src="http://v1ki.top//post-images/1573717769286.png" alt=""></p>
-<p>另外，需要注意的是API中提到 了。 <code>This modifier only takes effect when this view is inside of and visible within a NavigationView.</code> , 也就是说只能在 <code>NavigationView</code> 中的可见 <code>View</code> 才会生效。</p>
+                <p>   在Swift 中有很多有趣的语法，比如说 可以使用 <a href="https://docs.swift.org/swift-book/ReferenceManual/Declarations.html#grammar_prefix-operator-declaration"><code>操作符</code></a> 作为函数。 下面是操作符的三种类型：</p>
+<ul>
+<li>prefix    前缀操作符</li>
+<li>infix     中缀操作符</li>
+<li>postfix   后缀操作符</li>
+</ul>
+<p>   其中 prefix 和 postfix 为一元操作符，infix 为 二元操作符。</p>
+<p>   现在有一个 结构体 如下：</p>
+<pre><code>struct Person {
+    var name : String = &quot;&quot;
+    var birthday : String = &quot;2017-01-03&quot;
+    var phone : String = &quot;110&quot;
+    var email : String = &quot;xxxx@qq.sina.com.cn&quot;
+    var money : Double = 0
+    var age : Double = 0
+    var sex : Int = 0
+}
+</code></pre>
+<p>   通常情况下，我们想要访问属性，都是通过 <code>点属性名</code> 来调用，如果有操作符的情况下，我们可以将这一步放到操作符中。使用方法如下：</p>
+<ul>
+<li><code>prefix</code> 前缀操作符 获取 <code>Person</code> 的 <code>name</code> 属性</li>
+</ul>
+<pre><code>prefix operator +-+
+extension Person {
+    static prefix func +-+ (right: Person) -&gt;  String {
+        return right.name
+    }
+}
+</code></pre>
+<ul>
+<li><code>postfix</code> 后缀操作符 获取 <code>Person</code> 的 <code>birthday</code> 属性</li>
+</ul>
+<pre><code>postfix operator +-+
+extension Person {
+    static postfix func +-+ (left: Person) -&gt;  String {
+        return left.birthday
+    }
+}
+</code></pre>
+<p>   另外，如果我们需要将 两个<code>Person</code> 的某几项属性统计起来的话，我们可以使用 <code>infix</code>  中缀操作符来实现。</p>
+<ul>
+<li><code>infix</code> 中缀操作符  计算  <code>Person</code> 的 <code>money</code> 和 与 <code>age</code> 和的比</li>
+</ul>
+<pre><code>infix operator +/+
+extension Person {
+    static func +/+ (left: Person,right: Person) -&gt;  Double {
+        return (left.money + right.money) / (left.age + right.age)
+    }
+}
+</code></pre>
+<p>   由于，<code>prefix</code> 以及 <code>postfix</code>  都是一元操作符，所以没有优先级的概念，但是如果 <code>prefix</code> 以及 <code>postfix</code> 一起使用的时候，会先计算 <code>postfix</code> 然后再计算 <code>prefix</code> 。<code>infix</code> 有优先级，如果需要使用的话，请查看 <code>precedencegroup</code> 相关的资料。</p>
+<p>   特别需要注意的是，不能重写的操作符有 ：</p>
+<ul>
+<li><code>=, -&gt;, //, /*, */, .</code>  这些操作标识 <code>prefix ，postfix， infix</code> 都不能重写</li>
+<li><code>prefix</code> 不能重写  <code>&lt;, &amp;, ?</code></li>
+<li><code>infix</code> 不能重写  <code>?</code></li>
+<li><code>postfix</code>  不能重写  <code>&gt;, !, ?</code></li>
+</ul>
 
               </div>
               <div class="toc-container">
@@ -113,6 +154,15 @@
           </article>
         </div>
 
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="http://v1ki.top//post/swiftui-ios-xia-zi-ding-yi-navigationview-de-title">
+              <h3 class="post-title">
+                SwiftUI iOS 下自定义NavigationView 的Title
+              </h3>
+            </a>
+          </div>
         
 
         

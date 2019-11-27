@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://v1ki.top/</id>
     <title>浮生闲记</title>
-    <updated>2019-11-26T17:40:03.459Z</updated>
+    <updated>2019-11-27T17:17:39.293Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://v1ki.top/"/>
     <link rel="self" href="http://v1ki.top//atom.xml"/>
@@ -10,6 +10,72 @@
     <logo>http://v1ki.top//images/avatar.png</logo>
     <icon>http://v1ki.top//favicon.ico</icon>
     <rights>All rights reserved 2019, 浮生闲记</rights>
+    <entry>
+        <title type="html"><![CDATA[Swift 操作符使用扩展]]></title>
+        <id>http://v1ki.top//post/swift-cao-zuo-fu-ding-yi-yu-fa-xiao-ti-shi</id>
+        <link href="http://v1ki.top//post/swift-cao-zuo-fu-ding-yi-yu-fa-xiao-ti-shi">
+        </link>
+        <updated>2019-11-27T15:06:31.000Z</updated>
+        <content type="html"><![CDATA[<p>   在Swift 中有很多有趣的语法，比如说 可以使用 <a href="https://docs.swift.org/swift-book/ReferenceManual/Declarations.html#grammar_prefix-operator-declaration"><code>操作符</code></a> 作为函数。 下面是操作符的三种类型：</p>
+<ul>
+<li>prefix    前缀操作符</li>
+<li>infix     中缀操作符</li>
+<li>postfix   后缀操作符</li>
+</ul>
+<p>   其中 prefix 和 postfix 为一元操作符，infix 为 二元操作符。</p>
+<p>   现在有一个 结构体 如下：</p>
+<pre><code>struct Person {
+    var name : String = &quot;&quot;
+    var birthday : String = &quot;2017-01-03&quot;
+    var phone : String = &quot;110&quot;
+    var email : String = &quot;xxxx@qq.sina.com.cn&quot;
+    var money : Double = 0
+    var age : Double = 0
+    var sex : Int = 0
+}
+</code></pre>
+<p>   通常情况下，我们想要访问属性，都是通过 <code>点属性名</code> 来调用，如果有操作符的情况下，我们可以将这一步放到操作符中。使用方法如下：</p>
+<ul>
+<li><code>prefix</code> 前缀操作符 获取 <code>Person</code> 的 <code>name</code> 属性</li>
+</ul>
+<pre><code>prefix operator +-+
+extension Person {
+    static prefix func +-+ (right: Person) -&gt;  String {
+        return right.name
+    }
+}
+</code></pre>
+<ul>
+<li><code>postfix</code> 后缀操作符 获取 <code>Person</code> 的 <code>birthday</code> 属性</li>
+</ul>
+<pre><code>postfix operator +-+
+extension Person {
+    static postfix func +-+ (left: Person) -&gt;  String {
+        return left.birthday
+    }
+}
+</code></pre>
+<p>   另外，如果我们需要将 两个<code>Person</code> 的某几项属性统计起来的话，我们可以使用 <code>infix</code>  中缀操作符来实现。</p>
+<ul>
+<li><code>infix</code> 中缀操作符  计算  <code>Person</code> 的 <code>money</code> 和 与 <code>age</code> 和的比</li>
+</ul>
+<pre><code>infix operator +/+
+extension Person {
+    static func +/+ (left: Person,right: Person) -&gt;  Double {
+        return (left.money + right.money) / (left.age + right.age)
+    }
+}
+</code></pre>
+<p>   由于，<code>prefix</code> 以及 <code>postfix</code>  都是一元操作符，所以没有优先级的概念，但是如果 <code>prefix</code> 以及 <code>postfix</code> 一起使用的时候，会先计算 <code>postfix</code> 然后再计算 <code>prefix</code> 。<code>infix</code> 有优先级，如果需要使用的话，请查看 <code>precedencegroup</code> 相关的资料。</p>
+<p>   特别需要注意的是，不能重写的操作符有 ：</p>
+<ul>
+<li><code>=, -&gt;, //, /*, */, .</code>  这些操作标识 <code>prefix ，postfix， infix</code> 都不能重写</li>
+<li><code>prefix</code> 不能重写  <code>&lt;, &amp;, ?</code></li>
+<li><code>infix</code> 不能重写  <code>?</code></li>
+<li><code>postfix</code>  不能重写  <code>&gt;, !, ?</code></li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[SwiftUI iOS 下自定义NavigationView 的Title]]></title>
         <id>http://v1ki.top//post/swiftui-ios-xia-zi-ding-yi-navigationview-de-title</id>
