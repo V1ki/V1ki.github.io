@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>SwiftUI NavigationBar 隐藏 | 浮生闲记</title>
 <meta name="description" content="要么有趣,要么老去." />
-<link rel="shortcut icon" href="http://v1ki.top//favicon.ico?v=1574875055772">
+<link rel="shortcut icon" href="http://v1ki.top//favicon.ico?v=1574875936339">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="http://v1ki.top//styles/main.css">
@@ -20,7 +20,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="http://v1ki.top/">
-  <img class="avatar" src="http://v1ki.top//images/avatar.png?v=1574875055772" alt="">
+  <img class="avatar" src="http://v1ki.top//images/avatar.png?v=1574875936339" alt="">
   </a>
   <h1 class="site-title">
     浮生闲记
@@ -115,6 +115,32 @@
 
         
 
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '089c19b8ce1ee9af803f',
+    clientSecret: '5f7616f447cb731d641d11ae471f47bbc38d95b0',
+    repo: 'V1ki.github.io',
+    owner: 'V1ki',
+    admin: ['V1ki'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
         
 
         <div class="site-footer">
