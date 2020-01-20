@@ -2,18 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://v1ki.top/</id>
     <title>浮生闲记</title>
-    <updated>2019-11-27T17:47:11.528Z</updated>
+    <updated>2020-01-20T09:25:01.702Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://v1ki.top/"/>
-    <link rel="self" href="http://v1ki.top//atom.xml"/>
+    <link rel="self" href="http://v1ki.top/atom.xml"/>
     <subtitle>要么有趣,要么老去.</subtitle>
-    <logo>http://v1ki.top//images/avatar.png</logo>
-    <icon>http://v1ki.top//favicon.ico</icon>
-    <rights>All rights reserved 2019, 浮生闲记</rights>
+    <logo>http://v1ki.top/images/avatar.png</logo>
+    <icon>http://v1ki.top/favicon.ico</icon>
+    <rights>All rights reserved 2020, 浮生闲记</rights>
     <entry>
         <title type="html"><![CDATA[Swift 操作符使用扩展]]></title>
-        <id>http://v1ki.top//post/swift-cao-zuo-fu-ding-yi-yu-fa-xiao-ti-shi</id>
-        <link href="http://v1ki.top//post/swift-cao-zuo-fu-ding-yi-yu-fa-xiao-ti-shi">
+        <id>http://v1ki.top/post/swift-cao-zuo-fu-ding-yi-yu-fa-xiao-ti-shi</id>
+        <link href="http://v1ki.top/post/swift-cao-zuo-fu-ding-yi-yu-fa-xiao-ti-shi">
         </link>
         <updated>2019-11-27T15:06:31.000Z</updated>
         <content type="html"><![CDATA[<p>   在Swift 中有很多有趣的语法，比如说 可以使用 <a href="https://docs.swift.org/swift-book/ReferenceManual/Declarations.html#grammar_prefix-operator-declaration"><code>操作符</code></a> 作为函数。 下面是操作符的三种类型：</p>
@@ -78,8 +78,8 @@ extension Person {
     </entry>
     <entry>
         <title type="html"><![CDATA[SwiftUI iOS 下自定义NavigationView 的Title]]></title>
-        <id>http://v1ki.top//post/swiftui-ios-xia-zi-ding-yi-navigationview-de-title</id>
-        <link href="http://v1ki.top//post/swiftui-ios-xia-zi-ding-yi-navigationview-de-title">
+        <id>http://v1ki.top/post/swiftui-ios-xia-zi-ding-yi-navigationview-de-title</id>
+        <link href="http://v1ki.top/post/swiftui-ios-xia-zi-ding-yi-navigationview-de-title">
         </link>
         <updated>2019-11-26T13:53:26.000Z</updated>
         <content type="html"><![CDATA[<h2 id="引文">引文</h2>
@@ -269,18 +269,18 @@ struct NewNavigationConfigurator&lt;Content&gt; : UIViewControllerRepresentable 
     </entry>
     <entry>
         <title type="html"><![CDATA[SwiftUI NavigationBar 隐藏]]></title>
-        <id>http://v1ki.top//post/swiftui-navigationbar-yin-cang</id>
-        <link href="http://v1ki.top//post/swiftui-navigationbar-yin-cang">
+        <id>http://v1ki.top/post/swiftui-navigationbar-yin-cang</id>
+        <link href="http://v1ki.top/post/swiftui-navigationbar-yin-cang">
         </link>
         <updated>2019-11-14T07:34:34.000Z</updated>
         <content type="html"><![CDATA[<p>虽然在View 中有 <code>navigationBarHidden</code> 的方法，<br>
-<img src="http://v1ki.top//post-images/1573717474447.png" alt=""><br>
+<img src="http://v1ki.top//post-images/1573717474447.png" alt="" loading="lazy"><br>
 但是,实际使用时却需要注意，如果没有设置 <code>title</code> 的情况下，<br>
-<img src="http://v1ki.top//post-images/1573717482360.jpg" alt=""><br>
+<img src="http://v1ki.top//post-images/1573717482360.jpg" alt="" loading="lazy"><br>
 就设置 Hidden方法， 是不会生效的。</p>
-<figure data-type="image" tabindex="1"><img src="http://v1ki.top//post-images/1573717724985.png" alt=""></figure>
+<figure data-type="image" tabindex="1"><img src="http://v1ki.top//post-images/1573717724985.png" alt="" loading="lazy"></figure>
 <p>但是。如果设置了<code>title</code> 之后，就可以隐藏了。<br>
-<img src="http://v1ki.top//post-images/1573717769286.png" alt=""></p>
+<img src="http://v1ki.top//post-images/1573717769286.png" alt="" loading="lazy"></p>
 <p>另外，需要注意的是API中提到 了。 <code>This modifier only takes effect when this view is inside of and visible within a NavigationView.</code> , 也就是说只能在 <code>NavigationView</code> 中的可见 <code>View</code> 才会生效。</p>
 ]]></content>
     </entry>
