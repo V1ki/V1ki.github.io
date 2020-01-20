@@ -1,224 +1,171 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>浮生闲记</title>
-<meta name="description" content="要么有趣,要么老去." />
-<link rel="shortcut icon" href="http://v1ki.top//favicon.ico?v=1579512493321">
+<meta name="description" content="要么有趣,要么老去.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="http://v1ki.top//favicon.ico?v=1579512556251">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="http://v1ki.top//styles/main.css">
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153511680-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-153511680-1');
-</script>
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="http://v1ki.top/">
-  <img class="avatar" src="http://v1ki.top//images/avatar.png?v=1579512493321" alt="">
-  </a>
-  <h1 class="site-title">
-    浮生闲记
-  </h1>
-  <p class="site-description">
-    要么有趣,要么老去.
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="http://v1ki.top/">
+        <img src="http://v1ki.top//images/avatar.png?v=1579512556251" class="site-logo">
+        <h1 class="site-title">浮生闲记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    </div>
   </div>
-  <div class="social-container">
-    
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
+      
+    </div>
+    <div class="site-description">
+      要么有趣,要么老去.
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="http://v1ki.top//atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
 </div>
 
-    
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="http://v1ki.top/post/swift-cao-zuo-fu-ding-yi-yu-fa-xiao-ti-shi">
-        <h2 class="post-title">Swift 操作符使用扩展</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-11-27
-        </span>
-        <span>
-          2 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="http://v1ki.top/post/swiftui-ios-xia-zi-ding-yi-navigationview-de-title">
-        <h2 class="post-title">SwiftUI iOS 下自定义NavigationView 的Title</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-11-26
-        </span>
-        <span>
-          5 min read
-        </span>
-        
-          <a href="http://v1ki.top/tag/5SjgH3H3U" class="post-tag">
-            # NavigationItem
-          </a>
-        
-          <a href="http://v1ki.top/tag/i5JfhwsSjb" class="post-tag">
-            # IOS
-          </a>
-        
-          <a href="http://v1ki.top/tag/l4gXTHyAJ" class="post-tag">
-            # SwiftUI
-          </a>
-        
-          <a href="http://v1ki.top/tag/lw98i_yCV4" class="post-tag">
-            # NavigationBar
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="http://v1ki.top/post/swiftui-navigationbar-yin-cang">
-        <h2 class="post-title">SwiftUI NavigationBar 隐藏</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-11-14
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-          <a href="http://v1ki.top/tag/l4gXTHyAJ" class="post-tag">
-            # SwiftUI
-          </a>
-        
-          <a href="http://v1ki.top/tag/lw98i_yCV4" class="post-tag">
-            # NavigationBar
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-</div>
 
-    
-        <div class="pagination-container">
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://v1ki.top/post/swift-cao-zuo-fu-ding-yi-yu-fa-xiao-ti-shi">
+                  <h2 class="post-title">Swift 操作符使用扩展</h2>
+                </a>
+                <div class="post-date">
+                  2019-11-27
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://v1ki.top/post/swiftui-ios-xia-zi-ding-yi-navigationview-de-title">
+                  <h2 class="post-title">SwiftUI iOS 下自定义NavigationView 的Title</h2>
+                </a>
+                <div class="post-date">
+                  2019-11-26
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://v1ki.top/post/swiftui-navigationbar-yin-cang">
+                  <h2 class="post-title">SwiftUI NavigationBar 隐藏</h2>
+                </a>
+                <div class="post-date">
+                  2019-11-14
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+
+          <div class="pagination-container">
   
   
 </div>
 
-    
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="http://v1ki.top//atom.xml" target="_blank">RSS</a>
-</div>
+        </div>
+      </div>
+    </div>
 
-<script>
-  hljs.initHighlightingOnLoad()
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+<script type="application/javascript">
 
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
+AOS.init();
 
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
+hljs.initHighlightingOnLoad()
 
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
-      </div>
-    </div>
+
+
+
   </body>
 </html>
