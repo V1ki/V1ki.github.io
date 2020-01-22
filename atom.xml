@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://v1ki.top/</id>
     <title>浮生闲记</title>
-    <updated>2020-01-22T05:24:48.991Z</updated>
+    <updated>2020-01-22T20:57:47.690Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://v1ki.top/"/>
     <link rel="self" href="http://v1ki.top/atom.xml"/>
@@ -10,6 +10,36 @@
     <logo>http://v1ki.top/images/avatar.png</logo>
     <icon>http://v1ki.top/favicon.ico</icon>
     <rights>All rights reserved 2020, 浮生闲记</rights>
+    <entry>
+        <title type="html"><![CDATA[《上课啦》自动续费服务协议]]></title>
+        <id>http://v1ki.top/post/lesslessshang-ke-la-greatergreater-zi-dong-xu-fei-fu-wu-xie-yi</id>
+        <link href="http://v1ki.top/post/lesslessshang-ke-la-greatergreater-zi-dong-xu-fei-fu-wu-xie-yi">
+        </link>
+        <updated>2020-01-22T20:52:31.000Z</updated>
+        <content type="html"><![CDATA[<p>自动续费服务协议<br>
+重要须知<br>
+为使用 《上课啦》 自动续费委托扣款服务（以下简称“本服务”），您应当事先阅读并遵守《自动续费服务协议》（以下简称“本协议”）。除另行明确声明外，您使用自动续费服务均受本协议约束。<br>
+除非您已阅读并接受本协议所有条款，否则您无权使用本服务。您对本服务的使用行为即视为您已阅读并同意受本协议的约束。如果您未满18周岁，请在法定监护人的陪同下阅读本协议。<br>
+1.服务说明<br>
+1.1本服务是在您已开通付费会员服务（以下简称“会员服务”）的前提下，为您提供的自动续费委托扣款服务。如您开通本服务，则视为您授权《上课啦》在您的付费会员服务即将到期时，从您的自有充值账户、与您帐号绑定的第三方支付账户、银行卡、通信账户（以下统称“账户”）余额中代扣下一个计费周期费用，苹果应用内支付（IAP支付，in-app purchase）账户按自然月扣除下一个计费周期费用。该服务实现的前提是您已将付费会员帐号与上述账户绑定，且可成功从上述账户中扣款，因上述账户中可扣款余额不足导致的续费失败，由您自行承担相应后果（包括但不限于会员服务终止，无法参加付费会员活动等）。<br>
+1.2您应在使用本服务前对本服务的服务条款以及《上课啦》针对本服务发出的各类公示进行阅览并同意所有内容。<br>
+2.服务使用规则<br>
+2.1 《上课啦》通过您绑定的账户扣除下一计费周期费用，《上课啦》的计费周期包括按月、按年等扣费方式，《上课啦》扣除用户选择的指定扣费周期的自动续费费用后，将款项记入您支付记录，并同时相应延长您的服务有效期。<br>
+2.2 如在扣费过程出现差错，《上课啦》会和您应密切配合查明原因，各自承担己方过错造成的损失；若因双方各自存在不均等过错造成的损失，由双方按过错的程度承担相应责任；双方共负责任的，由双方均摊责任。<br>
+2.3 您选择使用本服务后，除非您选择终止本服务，否则，您对《上课啦》的自动扣款委托为不可撤销，《上课啦》基于本服务在您开通自动续费服务时选择的支付方式下所扣划的费用，不以任何方式对您所支付的费用予以退还。<br>
+2.6 若在自动续费日之前，《上课啦》自动续费服务价格发生调整，《上课啦》将在扣划之前相关页面公示修改内容，征得您同意后，按照更改后的价格进行划扣。<br>
+2.7 《上课啦》对您开通自动续费服务不额外收取任何费用，但《上课啦》有权根据业务需要或市场变化等原因决定是否对自动续费服务进行额外收费，并在相关页面向您进行公示。<br>
+3.中止或终止本服务<br>
+3.1 本协议自您选择接受或使用本服务后生效，直至您终止本服务/注销会员资格时终止。<br>
+3.2 《上课啦》根据自身商业决策等原因可能会选择中止、中断及中止本服务。如有此等情形发生，《上课啦》会采取公告的形式通知您。<br>
+3.5 终止方法：<br>
+（1）苹果应用内支付（IAP支付，in-app purchase）自动续费用户退订方法如下：<br>
+打开苹果手机“设置” --&gt; 进入“iTunes Store 与 App Store”--&gt;点击 “Apple ID”，选择&quot;查看Apple ID&quot;，进入&quot;账户设置&quot;页面，点击“订阅”，选择取消订阅即可。<br>
+（2）微信自动续费用户退订方法如下：<br>
+打开微信支付 --&gt; 点击右上角进入“支付管理” --&gt; 点击“自动扣费” --&gt; 选择《上课啦》 月费或者年费 --&gt; 点击“停止扣费”即可。<br>
+《上课啦》</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[swift-evolution 0258-property-wrappers]]></title>
         <id>http://v1ki.top/post/swift-evolution-0258-property-wrappers</id>
@@ -581,7 +611,319 @@ print(myValue)   // print the most recent value
 </code></pre>
 <p>这和 Combine's <code>Published</code> 属性封装器很神似 , 允许用户来订阅 <code>@Published</code>属性(通过 <code>$</code> 来映射) 以在值发生变化的时接收更新.<br>
 SwiftUI 广泛使用属性封装器来声明 局部状态( <code>@State</code> ) ,并表达了对可能影响UI的其他状态的数据依耐性(<code>@EnvironmentObject</code>, <code>@Environment</code>, <code>@ObjectBinding</code>). 它广泛使用了 <code>Binding</code> 属性封装器的映射,来允许影响UI的状态的可控变化.</p>
-<h3 id="composition-of-property-wrappers">Composition of property wrappers</h3>
+<h3 id="属性封装器的组合">属性封装器的组合</h3>
+<p>当为给定的属性提供多个属性封装器时, 封装器将组合在一起来同时获得所有的效果. 例如, 考虑下 <code>DelayedMutable</code> 和<code>Copying</code> 的组合:</p>
+<pre><code>@DelayedMutable @Copying var path: UIBezierPath
+</code></pre>
+<p>这样我们就有一个可以懒加载的属性,并且当我们设置它的值时,将通过 <code>NSCopying</code>的<code>copy</code> 方法将其复制.<br>
+通过将后面的封装器类型嵌套在前面的封装器类型来实现组合的 , 其中最里面的嵌套类型是原始属性的类型. 比如说上面的示例, 备用存储的类型将会是 <code>DelayedMutable&lt;Copying&lt;UIBezierPath&gt;&gt;</code>  , 并且对于<code>path</code> 合成的 gettter / setter 将遍历所有层次的<code>.wrappedValue</code>  :</p>
+<pre><code>private var _path: DelayedMutable&lt;Copying&lt;UIBezierPath&gt;&gt; = .init()
+var path: UIBezierPath {
+  get { return _path.wrappedValue.wrappedValue }
+  set { _path.wrappedValue.wrappedValue = newValue }
+}  
+</code></pre>
+<p>请注意,这个设计表明 属性封装器组合是 不可交换顺序的. 因为属性的顺序会影响嵌套的执行方式:</p>
+<pre><code>@DelayedMutable @Copying var path1: UIBezierPath   // _path1 has type DelayedMutable&lt;Copying&lt;UIBezierPath&gt;&gt;
+@Copying @DelayedMutable var path2: UIBezierPath   // error: _path2 has ill-formed type Copying&lt;DelayedMutable&lt;UIBezierPath&gt;&gt;
+</code></pre>
+<p>在这个示例中, 类型检查器会阻止第二种方式 , 因为 <code>DelayedMutable</code> 没有实现 <code>NSCopying</code> 协议 , 并不是所有的情况都是这样:  某些语义不太好的组合并不一定会被 类型检查器捕获,  在 &quot;Alternatives considered&quot; 中介绍了 这种组合方案的替代方法.</p>
+<h2 id="设计细节">设计细节</h2>
+<h3 id="属性封装器类型">属性封装器类型</h3>
+<p>属性封装器类型是可以用 封装属性的类型.  对于属性封装器来说,有两个基础要求:</p>
+<ol>
+<li>属性封装器类型一定要使用<code>@propertyWrapper</code> 属性来定义,  该属性表明该类型是要用作属性封装器类型,且提供一个点, 编译器可以在该点上验证任何其他的一致性规则.</li>
+<li>属性封装器类型 一定要有 <code>wrappedValue</code> 属性, 该属性的访问等级和封装器类型的等级一致. 这是编译器用来访问封装器实例上的值的属性.</li>
+</ol>
+<h3 id="合成存储属性的初始化">合成存储属性的初始化</h3>
+<p>向属性引入属性封装器可以使 该属性被计算(使用 getter / setter ) ,并引入一个类型为封装器类型的存储属性. 该存储属性可以使用如下三种方式来进行初始化:</p>
+<ol>
+<li>通过原有属性类型的值( 比如 在<code>@Lazy var foo : Int</code> 中的 <code>Int</code> ,使用 属性封装器类型的 <code>init(wrappedValue:)</code> 构造器. 该构造器必须具有与 <code>wrappedValue</code> 属性类型一致的参数( 或者是 <code>@autoclosure</code> ) , 且拥有和属性封装器类型相同的访问等级. 当 <code>init(wrappedValue:)</code> 存在时,  则通常会用作属性声明时的初始值.</li>
+</ol>
+<pre><code>@Lazy var foo = 17
+
+// ... implemented as
+private var _foo: Lazy = Lazy(wrappedValue: 17)
+var foo: Int { /* access via _foo.wrappedValue as described above */ }
+</code></pre>
+<p>当有多个属性封装器进行组合时, 它们必须都要提供<code>init(wrappedValue:)</code>  ,且初始化的结果将封装每个调用层次 :</p>
+<pre><code>@Lazy @Copying var path = UIBezierPath()
+
+// ... implemented as
+private var _path: Lazy&lt;Copying&lt;UIBezierPath&gt;&gt; = .init(wrappedValue: .init(wrappedValue: UIBezierPath()))
+var path: UIBezierPath { /* access via _path.wrappedValue.wrappedValue as described above */ }
+</code></pre>
+<ol start="2">
+<li>通过属性封装器类型的值,通过将初始化参数放在属性封装器类型后面:</li>
+</ol>
+<pre><code>var addressOfInt: UnsafePointer&lt;Int&gt; = ...
+
+@UnsafeMutablePointer(mutating: addressOfInt) 
+var someInt: Int
+
+// ... implemented as
+private var _someInt: UnsafeMutablePointer&lt;Int&gt; = UnsafeMutablePointer(mutating: addressOfInt)
+var someInt: Int { /* access via _someInt.wrappedValue */ }
+</code></pre>
+<p>当有多个属性封装器进行组合时, 只有第一个(最外层的)  封装器可以有初始化参数.<br>
+3. 隐式的 , 当没提供构造器 ,且属性封装类型提供了无参的构造器 (<code>init()</code>) . 这种情况下, 将会调用封装器类型的 <code>init()</code> 来初始化存储属性:</p>
+<pre><code>@DelayedMutable var x: Int
+
+// ... implemented as
+private var _x: DelayedMutable&lt;Int&gt; = DelayedMutable&lt;Int&gt;()
+var x: Int { /* access via _x.wrappedValue */ }
+</code></pre>
+<p>当有多个属性封装器进行组合时, 只有第一个(最外层的)  封装器才需要有 <code>init()</code>.</p>
+<h3 id="使用属性封装器进行类型推导">使用属性封装器进行类型推导</h3>
+<p>如果第一个属性封装器类型是泛型的,则必须在属性中显示的给出其泛型参数, 或者 Swift 必须能从变量声明中推导出来. 推导过程如下:</p>
+<ul>
+<li>当变量有初始值 <code>E</code> 时, 则第一个封装器类型 限制为等于调用  <code>A(wrappedValue: E, argsA...)</code>得到的类型, 其中,<code>A</code>是该属性的书面类型, <code>argsA</code> 是提供给该属性的参数 . 例如 :</li>
+</ul>
+<pre><code>@Lazy var foo = 17
+// type inference as in...
+private var _foo: Lazy = Lazy(wrappedValue: 17)
+// infers the type of '_foo' to be 'Lazy&lt;Int&gt;'
+</code></pre>
+<p>如果有多个封装器属性的话, 则此调用的参数将是对 下一个属性的书面类型 <code>B(wrappedValue: E, argsB...)</code> 的嵌套调用, 以此类推 , 例如 :</p>
+<pre><code>@A @B(name: &quot;Hello&quot;) var bar = 42
+// type inference as in ...
+private var _bar = A(wrappedValue: B(wrappedValue: 42, name: &quot;Hello&quot;))
+// infers the type of '_bar' to be 'A&lt;B&lt;Int&gt;'
+</code></pre>
+<ul>
+<li>当变量没有初始值 <code>E</code> 时, 如果第一个封装器属性有直接初始化参数 <code>E...</code> , 那么最外层的封装器类型限制为等于 调用 <code>A(E...)</code> 得到的类型, 其中,<code>A</code>是该属性的书面类型, 在第一个封装器属性后面的可能没有直接构造器 . 例如 :</li>
+</ul>
+<pre><code>@UnsafeMutablePointer(mutating: addressOfInt)
+var someInt
+// type inference as in...
+private var _someInt: UnsafeMutablePointer = UnsafeMutablePointer.init(mutating: addressOfInt)
+// infers the type of `_someInt` to be `UnsafeMutablePointer&lt;Int&gt;`
+</code></pre>
+<ul>
+<li>当变量没有初始值 <code>E</code> 时, 且没有构造器时 , 且原始属性有类型注解, 最后一个封装器类型的<code>wrappedValue</code> 属性类型等同于原始属性的类型注解. 例如:</li>
+</ul>
+<pre><code>@propertyWrapper
+struct Function&lt;T, U&gt; {
+  var wrappedValue: (T) -&gt; U? { ... }
+}
+
+@Function var f: (Int) -&gt; Float?   // infers T=Int, U=Float 
+</code></pre>
+<p>在任何情况下, 第一个封装器类型限制为等于 第一个指定的书面属性类型  . 此外, 对于任何辅助封装器属性,  上一个封装器的 <code>wrappedValue</code> 属性的类型 限制为 指定属性的书面类型. 最后,如果已经给出了类型注解 , 最后的封装器类型的 <code>wrappedValue</code> 属性的类型 等同于 类型注解. 如果这些规则无法推断出第一封装器类型的所有类型参数, 或者他们彼此不一致, 则该变量的格式错误. 例如:</p>
+<pre><code>@Lazy&lt;Int&gt; var foo: Int  // okay
+@Lazy&lt;Int&gt; var bar: Double  // error: Lazy&lt;Int&gt;.wrappedValue is of type Int, not Double
+</code></pre>
+<p>这个推导同样也可以提供原始属性的类型 (如果类型注解被漏掉了), 或者推导出被漏掉的泛型参数的类型注解. 例如 :</p>
+<pre><code>@propertyWrapper
+struct StringDictionary {
+  var wrappedValue: [String: String]
+}
+
+@StringDictionary var d1.            // infers Dictionary&lt;String, String&gt;
+@StringDictionary var d2: Dictionary // infers &lt;String, String&gt;
+</code></pre>
+<h3 id="自定义属性">自定义属性</h3>
+<p>属性封装器是自定义属性的一种形式 , 其中属性语法用于 引用在Swift中声明的实体, 在语法上, 属性包装器的使用描述如下:</p>
+<pre><code>attribute ::= '@' type-identifier expr-paren?
+</code></pre>
+<p>其中 <code>type-identifier</code> 必须引用属性封装器类型, 该类型可以包含泛型参数, 请注意,这允许对属性名称进行限定 , 例如  :</p>
+<pre><code>@Swift.Lazy var foo = 1742
+</code></pre>
+<p>如果存在 <code>expr-paren</code> ,则为封装器实例提供初始化参数.<br>
+自定义属性的这种表述适合于<code>larger proposal for custom attributes</code> ,该建议使用与上诉相同的自定义属性语法, 但允许采用其他方式定义一个类型以用作属性 . 在此方案中, <code>@propertyWrapper</code> 只是一种自定义属性: 还有其他种类的自定义属性 仅在编译时 (例如, 对于工具) 或运行时(通过某种反射功能) 可用.</p>
+<h3 id="封装器属性的可变性">封装器属性的可变性</h3>
+<p>通常来说, 具有属性封装器的属性将同时具有 getter 和 setter . 但是 , 如果属性封装器类型的 <code>wrappedValue</code> 属性缺少设置器, 或者无法访问 setter  ,则该setter 可能会丢失 .<br>
+如果属性封装器的<code>wrappedValue</code> 属性是<code>mutating</code> 并且 属性是<code>struct</code>的一部分, 则合成getter 将会设置为 <code>mutating</code> . 同样 ,如果属性封装器类型的 <code>wrappedValue</code> 属性具有 <code>nonmutating</code> setter 或 属性封装器是 <code>class</code> , 则 合成的 setter 将是 <code>nonmutating</code>  . 例如 :</p>
+<pre><code>@propertyWrapper
+struct MutatingGetterWrapper&lt;Value&gt; {
+  var wrappedValue: Value {
+    mutating get { ... }
+    set { ... }
+  }
+}
+
+@propertyWrapper
+struct NonmutatingSetterWrapper&lt;Value&gt; {
+  var wrappedValue: Value {
+    get { ... }
+    nonmutating set { ... }
+  }
+}
+
+@propertyWrapper
+class ReferenceWrapper&lt;Value&gt; {
+  var wrappedValue: Value
+}
+
+struct Usewrappers {
+  // x's getter is mutating
+  // x's setter is mutating
+  @MutatingGetterWrapper var x: Int
+
+  // y's getter is nonmutating
+  // y's setter is nonmutating
+  @NonmutatingSetterWrapper var y: Int
+  
+  // z's getter is nonmutating
+  // z's setter is nonmutating
+  @ReferenceWrapper var z: Int  
+}
+</code></pre>
+<h3 id="使用封装器进行属性的离线初始化">使用封装器进行属性的离线初始化</h3>
+<p>有封装器的属性可以在定义后被初始化,或者通过属性本身( 如果封装器类型有 <code>init(wrappedValue:)</code> 构造器) , 或者通过合成存储属性 例如 :</p>
+<pre><code>@Lazy var x: Int
+// ...
+x = 17   // okay, treated as _x = .init(wrappedValue: 17)
+</code></pre>
+<p>合成存储属性也可以直接初始化 ,例如 :</p>
+<pre><code>@UnsafeMutable var y: Int
+// ...
+_y = UnsafeMutable&lt;Int&gt;(pointer: addressOfInt) // okay
+</code></pre>
+<p>请注意,定义初始化(DI)规则适用于具有封装器的属性.  让我们扩展上面<code>x</code> 的示例,来重新赋值并使用<code>var</code> :</p>
+<pre><code>@Lazy var x2: Int
+// ...
+x2 = 17   // okay, treated as _x2 = .init(wrappedValue: 17)
+// ...
+x2 = 42   // okay, treated as x2 = 42 (calls the Lazy.wrappedValue setter)
+</code></pre>
+<h3 id="成员构造器">成员构造器</h3>
+<p>结构体基于结构体中的存储属性隐式声明了成员构造器 . 对于有属性封装器的属性来说 ,该属性是从技术上计算出来的, 因为他是存储的(封装器类型的)合成属性 . 有属性封装器的实例属性需要 在 成员构造器中拥有相对应的参数 ,其类型将是原始属性类型或封装器类型, 具体取决于 封装器类型和初始值(如果提供了的话) . 具体的来说, 如果满足一下任一条件,则具有属性封装器的实例属性的成员构造器参数将会有一个原始属性类型 :</p>
+<ul>
+<li>对应的属性具有 使用<code>=</code>语法指定的初始值. 例如: <code>@Lazy var i = 17</code> ,或者</li>
+<li>对应的属性没有初始值 ,但是属性封装器类型使用了 <code>init(wrappedValue:)</code></li>
+</ul>
+<p>否则 ,该成员构造器将需要有和封装器类型相同的的初始化参数.例如:</p>
+<pre><code>struct Foo {
+  @UserDefault(key: &quot;FOO_FEATURE_ENABLED&quot;, defaultValue: false)
+  var x: Bool
+  @Lazy var y: Int = 17
+  @Lazy(closure: { getBool() }) var z: Bool
+  @CopyOnWrite var w: Image
+
+  // implicit memberwise initializer:
+  init(x: UserDefault&lt;Bool&gt; = UserDefault(key: &quot;FOO_FEATURE_ENABLED&quot;, defaultValue: false),
+       y: Int = 17,
+       z: Lazy&lt;Bool&gt; = Lazy(closure: { getBool() }),
+       w: Image) {
+    self._x = x
+    self._y = Lazy(wrappedValue: y)
+    self._z = z
+    self._w = CopyOnWrite(wrappedValue: w)
+  }
+}
+</code></pre>
+<h3 id="codable-hashable-and-equatable-synthesis">Codable, Hashable, and Equatable synthesis</h3>
+<p><code>Codable</code>, <code>Hashable</code>,  <code>Equatable</code>  的合成使用备用存储属性. 这允许属性封装器类型来确定其自身的序列化和相等行为. 对于 <code>Encodable</code> 和 <code>Decodable</code> , 用于 &quot;keyed archiving&quot; 的名称就是原始属性声明(不带 <code>_</code>) 名称.</p>
+<h3 id="标识符">$ 标识符</h3>
+<p>目前来说 , 以<code>$</code> 开始的标识符是在Swift 编程时是不允许的. 如今, 此类标识符仅在 LLDB中使用, 他们可以用作在调试会话中的持久数据的名称.<br>
+当前提案略微放松了这项规则:  Swift 编译器将引入以<code>$</code>开头的标识符(对于映射属性) ,并且Swift代码中可以引用这些属性. 但是, Swift 代码不能声明任何以<code>$</code>开头的标识符的新实体 . 例如:</p>
+<pre><code>@CopyOnWrite var x = UIBezierPath()
+print($x)                 // okay to refer to compiler-defined $x
+let $y = UIBezierPath()   // error: cannot declare entity with $-prefixed name '$y'
+</code></pre>
+<h3 id="映射">映射</h3>
+<p>属性封装器可以选择提供一个映射属性(例如: <code>$foo</code>), 通过定义<code>projectedValue</code> 属性来为每个封装的属性公开更多的API .<br>
+就像 <code>wrappedValue</code> 属性 和<code>init(wrappedValue:)</code> 一样 , <code>projectedValue</code> 属性一定要和其属性封装器相同的访问等级. 例如 :</p>
+<pre><code>class StorageManager {
+  func allocate&lt;T&gt;(_: T.Type) -&gt; UnsafeMutablePointer&lt;T&gt; { ... }
+}
+
+@propertyWrapper
+struct LongTermStorage&lt;Value&gt; {
+  let pointer: UnsafeMutablePointer&lt;Value&gt;
+
+  init(manager: StorageManager, initialValue: Value) {
+    pointer = manager.allocate(Value.self)
+    pointer.initialize(to: initialValue)
+  }
+
+  var wrappedValue: Value {
+    get { return pointer.pointee }
+    set { pointer.pointee = newValue }
+  }
+
+  var projectedValue: UnsafeMutablePointer&lt;Value&gt; {
+    return pointer
+  }
+}
+</code></pre>
+<p>当我们使用<code>LongTermStorage</code> 封装器时 , 它处理与<code>StorageManager</code> 的协调, 并提供直接访问 或者 <code>UnsafeMutablePointer</code> 来操作值:</p>
+<pre><code>let manager = StorageManager(...)
+
+@LongTermStorage(manager: manager, initialValue: &quot;Hello&quot;)
+var someValue: String
+
+print(someValue)     // prints &quot;Hello&quot;
+someValue = &quot;World&quot;  // update the value in storage to &quot;World&quot;
+
+// $someValue accesses the projectedValue property of the wrapper instance, which
+// is an UnsafeMutablePointer&lt;String&gt;
+let world = $someValue.move()   // take value directly from the storage
+$someValue.initialize(to: &quot;New value&quot;)
+</code></pre>
+<p>映射属性和原始属性有相同的访问级别.</p>
+<pre><code>@LongTermStorage(manager: manager, initialValue: &quot;Hello&quot;)
+public var someValue: String
+</code></pre>
+<p>可以转换成:</p>
+<pre><code>private var _someValue: LongTermStorage&lt;String&gt; = LongTermStorage(manager: manager, initialValue: &quot;Hello&quot;)
+
+public var $someValue: UnsafeMutablePointer&lt;String&gt; {
+  get { return _someValue.projectedValue }
+}
+
+public var someValue: String {
+  get { return _someValue.wrappedValue }
+  set { _someValue.wrappedValue = newValue }
+}
+</code></pre>
+<p>请注意 ,在这个示例中, <code>$someValue</code> 是不可写的. 因为 <code>projectedValue</code>属性是<code>get-only</code> 的属性.<br>
+当多个属性封装器应用于指定的属性时, 将仅考虑最外层的属性封装器的<code>projectedValue</code> .</p>
+<h3 id="属性封装器的使用限制">属性封装器的使用限制</h3>
+<p>定义属性时, 使用属性封装器有很多限制 :</p>
+<ul>
+<li>带封装器的属性不能被声明到 <code>protocol</code>中 .</li>
+<li>带封装器的实例属性不能被声明到 <code>extension</code> 中 .</li>
+<li>带封装器的实例属性不能被声明到 <code>enum</code> 中 .</li>
+<li><code>class</code> 中声明的带封装器的属性不能重写其他的属性.</li>
+<li>带封装器的属性 不能被 <code>lazy</code> , <code>@NSCopying</code> , <code>@NSManaged</code> , <code>weak</code> , <code>unowned</code> 修饰.</li>
+<li>带封装器的属性必须是其封闭声明中唯一声明的属性. (例如 <code>@Lazy var (x, y) = /* ... */</code> 就是错误的).</li>
+<li>带封装器的属性不应该定义 getter / setter</li>
+<li>属性封装器的 <code>wrappedValue</code> 属性和 <code>init(wrappedValue:)</code> (如果存在的话)  的访问等级应该和该封装器类型一致.</li>
+<li>属性封装器的 <code>projectedValue</code> 属性 (如果存在的话) 的访问等级应该和该封装器类型一致.</li>
+<li>属性封装器的 <code>init()</code> 构造器 (如果存在的话) 的访问等级应该和该封装器类型一致.</li>
+</ul>
+<h2 id="对现有代码的影响">对现有代码的影响</h2>
+<p>就其本身而言 , 这是一个附加功能 , 不会影响现有代码. 但是, 在建议使用某些属性封装器的情况下,它可能会使现有的硬编码语言功能过时. <code>@NSCopying</code>可以完全替换为<code>Foundation</code>模块中引入的<code>Copying</code>属性封装器类型. <code>lazy</code>不能完全替换, 因为它的初始值可以引用封闭类型的自身; 请参阅 'deferred evaluation of initialization expressions ', 但是，引入<code>Lazy</code>属性封装器类型以覆盖许多常见用例仍然有意义，而将更神奇的<code>lazy</code> 留作向后兼容功能。</p>
+<h2 id="向后兼容">向后兼容</h2>
+<p>提议的属性封装器语言功能对ABI或运行时没有影响。 使用属性封装器的二进制文件可以向后部署到Swift 5.0运行时。</p>
+<h2 id="替代方案">替代方案</h2>
+<h3 id="组合">组合</h3>
+<p>在提议的第一个修订版中是没有包括组合的 , 因为可以手动组合属性封装器类型 . 例如, <code>@A @B</code>的组合可以实现为<code>AB</code> 封装器 :</p>
+<pre><code>@propertyWrapper
+struct AB&lt;Value&gt; {
+  private var storage: A&lt;B&lt;Value&gt;&gt;
+  
+  var wrappedValue: Value {
+    get { storage.wrappedValue.wrappedValue }
+    set { storage.wrappedValue.wrappedValue = newValue }
+  }
+}
+</code></pre>
+<p>这个方法的主要优点是可预测性 :  <code>AB</code> 的作者决定如何最好的实现 <code>A</code> 和 <code>B</code> 的组合, 适当的命令, 并且提供正确的API  和有关语义的文档. 另外一方面 , 必须手动写出的每个组合都是很多样板 ,特别是对于  主要卖点 是消除样板的特征 . 同时 不幸的的是, 必须要为每个组合 命名 --- 当我尝试 通过<code>@A</code> 和 <code>@B</code> 来组合成 <code>A</code> 和 <code>B</code> 时 ,我怎么知道去寻找那些手动组合的属性封装器类型<code>AB</code> ?  或者那应该是 <code>BA</code> ?</p>
+<h3 id="通过嵌套类型查找来组合">通过嵌套类型查找来组合</h3>
+<p>一种建议的组合方法仅直接解决上述最后一个问题，将属性组合语法<code>@A</code> <code>@B</code>视为对<code>A</code>内嵌套类型<code>B</code>的查找，以找到封装器类型：</p>
+<pre><code>@propertyWrapper
+struct A&lt;Value&gt; {
+  var wrappedValue: Value { ... }
+}
+
+extension A {
+  typealias B = AB&lt;Value&gt;
+}
+</code></pre>
+<p>这可以使自然合成语法<code>@A</code> <code>@B</code> 起作用 ,重定向到实现正确语义和API的手动编写的属性封装器 .  此外, 这个方案还可以运行哪个组合是有效的 : 如果 <code>A</code> 中没有嵌套属性<code>B</code> , 则该组合无效. 如果 <code>A.B</code> 和 <code>B.A</code> 都存在的话,我们可以选择 . 将可以交换的语义作为语言的一部分 ( <code>B.A</code> 和 <code>A.B</code> 必须引用相同的类型, 或者 <code>@A @B</code>组合的格式不正确)</p>
 ]]></content>
     </entry>
     <entry>
