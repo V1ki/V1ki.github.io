@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://v1ki.top/</id>
     <title>浮生闲记</title>
-    <updated>2020-01-22T20:57:47.690Z</updated>
+    <updated>2020-01-23T06:54:46.911Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://v1ki.top/"/>
     <link rel="self" href="http://v1ki.top/atom.xml"/>
@@ -10,36 +10,6 @@
     <logo>http://v1ki.top/images/avatar.png</logo>
     <icon>http://v1ki.top/favicon.ico</icon>
     <rights>All rights reserved 2020, 浮生闲记</rights>
-    <entry>
-        <title type="html"><![CDATA[《上课啦》自动续费服务协议]]></title>
-        <id>http://v1ki.top/post/lesslessshang-ke-la-greatergreater-zi-dong-xu-fei-fu-wu-xie-yi</id>
-        <link href="http://v1ki.top/post/lesslessshang-ke-la-greatergreater-zi-dong-xu-fei-fu-wu-xie-yi">
-        </link>
-        <updated>2020-01-22T20:52:31.000Z</updated>
-        <content type="html"><![CDATA[<p>自动续费服务协议<br>
-重要须知<br>
-为使用 《上课啦》 自动续费委托扣款服务（以下简称“本服务”），您应当事先阅读并遵守《自动续费服务协议》（以下简称“本协议”）。除另行明确声明外，您使用自动续费服务均受本协议约束。<br>
-除非您已阅读并接受本协议所有条款，否则您无权使用本服务。您对本服务的使用行为即视为您已阅读并同意受本协议的约束。如果您未满18周岁，请在法定监护人的陪同下阅读本协议。<br>
-1.服务说明<br>
-1.1本服务是在您已开通付费会员服务（以下简称“会员服务”）的前提下，为您提供的自动续费委托扣款服务。如您开通本服务，则视为您授权《上课啦》在您的付费会员服务即将到期时，从您的自有充值账户、与您帐号绑定的第三方支付账户、银行卡、通信账户（以下统称“账户”）余额中代扣下一个计费周期费用，苹果应用内支付（IAP支付，in-app purchase）账户按自然月扣除下一个计费周期费用。该服务实现的前提是您已将付费会员帐号与上述账户绑定，且可成功从上述账户中扣款，因上述账户中可扣款余额不足导致的续费失败，由您自行承担相应后果（包括但不限于会员服务终止，无法参加付费会员活动等）。<br>
-1.2您应在使用本服务前对本服务的服务条款以及《上课啦》针对本服务发出的各类公示进行阅览并同意所有内容。<br>
-2.服务使用规则<br>
-2.1 《上课啦》通过您绑定的账户扣除下一计费周期费用，《上课啦》的计费周期包括按月、按年等扣费方式，《上课啦》扣除用户选择的指定扣费周期的自动续费费用后，将款项记入您支付记录，并同时相应延长您的服务有效期。<br>
-2.2 如在扣费过程出现差错，《上课啦》会和您应密切配合查明原因，各自承担己方过错造成的损失；若因双方各自存在不均等过错造成的损失，由双方按过错的程度承担相应责任；双方共负责任的，由双方均摊责任。<br>
-2.3 您选择使用本服务后，除非您选择终止本服务，否则，您对《上课啦》的自动扣款委托为不可撤销，《上课啦》基于本服务在您开通自动续费服务时选择的支付方式下所扣划的费用，不以任何方式对您所支付的费用予以退还。<br>
-2.6 若在自动续费日之前，《上课啦》自动续费服务价格发生调整，《上课啦》将在扣划之前相关页面公示修改内容，征得您同意后，按照更改后的价格进行划扣。<br>
-2.7 《上课啦》对您开通自动续费服务不额外收取任何费用，但《上课啦》有权根据业务需要或市场变化等原因决定是否对自动续费服务进行额外收费，并在相关页面向您进行公示。<br>
-3.中止或终止本服务<br>
-3.1 本协议自您选择接受或使用本服务后生效，直至您终止本服务/注销会员资格时终止。<br>
-3.2 《上课啦》根据自身商业决策等原因可能会选择中止、中断及中止本服务。如有此等情形发生，《上课啦》会采取公告的形式通知您。<br>
-3.5 终止方法：<br>
-（1）苹果应用内支付（IAP支付，in-app purchase）自动续费用户退订方法如下：<br>
-打开苹果手机“设置” --&gt; 进入“iTunes Store 与 App Store”--&gt;点击 “Apple ID”，选择&quot;查看Apple ID&quot;，进入&quot;账户设置&quot;页面，点击“订阅”，选择取消订阅即可。<br>
-（2）微信自动续费用户退订方法如下：<br>
-打开微信支付 --&gt; 点击右上角进入“支付管理” --&gt; 点击“自动扣费” --&gt; 选择《上课啦》 月费或者年费 --&gt; 点击“停止扣费”即可。<br>
-《上课啦》</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[swift-evolution 0258-property-wrappers]]></title>
         <id>http://v1ki.top/post/swift-evolution-0258-property-wrappers</id>
